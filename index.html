@@ -33,7 +33,7 @@
 
 
   <!-- =====================================================
-       BASIC META
+       BASIC
        ===================================================== -->
 
   <meta charset="UTF-8">
@@ -43,29 +43,24 @@
 
 
   <!-- =====================================================
-       TITLE
+       SEO
        ===================================================== -->
 
   <title>
     MoneshSys Technologies | Smart Digital Solutions
   </title>
 
-
   <meta name="title"
         content="MoneshSys Technologies">
-
 
   <meta name="description"
         content="MoneshSys Technologies is a student-driven technology initiative focused on websites, apps, digital tools, learning, collaboration, and automation.">
 
-
   <meta name="keywords"
-        content="MoneshSys Technologies, MoneshSys, MoneshSys Tech, MoneshSys company, Bevan Jude, Manager Logo Design">
-
+        content="MoneshSys Technologies, MoneshSys, MoneshSys Tech, MoneshSys company, staff, Bevan Jude">
 
   <meta name="author"
         content="MoneshSys Technologies">
-
 
   <meta name="robots"
         content="index, follow">
@@ -95,45 +90,38 @@
   <meta property="og:title"
         content="MoneshSys Technologies | Smart Digital Solutions">
 
-
   <meta property="og:description"
         content="Smart, Simple & Secure Digital Solutions">
-
 
   <meta property="og:type"
         content="website">
 
-
   <meta property="og:url"
         content="https://monesh-sys.github.io/MoneshSys-Technologies/">
-
 
   <meta property="og:image"
         content="https://monesh-sys.github.io/MoneshSys-Technologies/logo.png">
 
 
   <!-- =====================================================
-       TWITTER CARD
+       TWITTER
        ===================================================== -->
 
   <meta name="twitter:card"
         content="summary_large_image">
 
-
   <meta name="twitter:title"
         content="MoneshSys Technologies">
 
-
   <meta name="twitter:description"
         content="Smart, Simple & Secure Digital Solutions">
-
 
   <meta name="twitter:image"
         content="https://monesh-sys.github.io/MoneshSys-Technologies/logo.png">
 
 
   <!-- =====================================================
-       ORGANIZATION + STAFF STRUCTURED DATA
+       STRUCTURED DATA
        ===================================================== -->
 
   <script type="application/ld+json">
@@ -144,19 +132,19 @@
     "url": "https://monesh-sys.github.io/MoneshSys-Technologies/",
     "logo": "https://monesh-sys.github.io/MoneshSys-Technologies/logo.png",
 
-    "employee": {
-      "@type": "Person",
-      "name": "Bevan Jude",
-      "jobTitle": "Manager – Logo Design",
-      "url": "https://staff.moneshsys.com/bevan-jude.html",
-      "image": "https://staff.moneshsys.com/bevan.jpg",
-
-      "worksFor": {
-        "@type": "Organization",
-        "name": "MoneshSys Technologies",
-        "url": "https://monesh-sys.github.io/MoneshSys-Technologies/"
+    "employee": [
+      {
+        "@type": "Person",
+        "name": "Bevan Jude",
+        "jobTitle": "Manager – Logo Design",
+        "url": "https://staff.moneshsys.com/bevan-jude.html",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "MoneshSys Technologies",
+          "url": "https://monesh-sys.github.io/MoneshSys-Technologies/"
+        }
       }
-    }
+    ]
   }
   </script>
 
@@ -188,7 +176,7 @@
 
 
     /* =====================================================
-       NAVIGATION
+       NAVBAR
        ===================================================== */
 
     nav {
@@ -240,7 +228,7 @@
 
 
     /* =====================================================
-       SECTIONS
+       GENERAL SECTIONS
        ===================================================== */
 
     section {
@@ -314,7 +302,7 @@
 
 
     /* =====================================================
-       STAFF SECTION
+       STAFF
        ===================================================== */
 
     #staff {
@@ -322,141 +310,111 @@
     }
 
 
-    .staff-intro {
+    .staff-description {
       max-width: 700px;
       margin: 0 auto 30px;
+      color: #666;
       line-height: 1.7;
-      color: #555;
     }
 
 
-    .staff-grid {
-      display: flex;
-      justify-content: center;
-      align-items: stretch;
-      gap: 25px;
-      flex-wrap: wrap;
+    .staff-list {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+      gap: 20px;
+
+      margin-top: 25px;
     }
 
 
-    .staff-card {
-      width: 320px;
+    .staff-member {
       background: #f8fbff;
+
       border: 1px solid #dce8f5;
-      border-radius: 15px;
-      padding: 30px 20px;
-      text-align: center;
+
+      border-radius: 12px;
+
+      padding: 25px;
+
+      text-align: left;
+
       transition: 0.3s;
     }
 
 
-    .staff-card:hover {
-      transform: translateY(-5px);
+    .staff-member:hover {
+      transform: translateY(-3px);
+
       box-shadow:
-        0 8px 25px rgba(10, 102, 194, 0.18);
+        0 6px 20px rgba(10, 102, 194, 0.12);
     }
 
 
-    .staff-card img {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #0a66c2;
-      margin-bottom: 15px;
-    }
+    .staff-member h3 {
+      margin: 0 0 8px;
 
+      font-size: 22px;
 
-    .staff-card h3 {
-      margin: 5px 0 8px;
-      font-size: 25px;
       color: #222;
     }
 
 
-    .staff-role {
+    .staff-member .role {
       color: #0a66c2;
+
       font-weight: bold;
-      font-size: 17px;
-      margin-bottom: 15px;
+
+      margin-bottom: 12px;
     }
 
 
-    .staff-card p {
-      line-height: 1.6;
+    .staff-member p {
       color: #555;
-      font-size: 14px;
+
+      line-height: 1.6;
+
+      margin-bottom: 18px;
     }
 
 
-    .staff-profile-btn {
+    .staff-member a {
       display: inline-block;
-      margin-top: 15px;
-      padding: 12px 18px;
-      background: #0a66c2;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
+
+      color: #0a66c2;
+
       font-weight: bold;
+
+      text-decoration: none;
+
+      border: 1px solid #0a66c2;
+
+      padding: 9px 14px;
+
+      border-radius: 7px;
+
       transition: 0.3s;
     }
 
 
-    .staff-profile-btn:hover {
-      background: #084e96;
-      transform: translateY(-2px);
-    }
+    .staff-member a:hover {
+      background: #0a66c2;
 
-
-    /* Official profile box */
-
-    .official-profile {
-      margin-top: 30px;
-      padding: 22px;
-      background: #eef8ff;
-      border-radius: 10px;
-      border-left: 5px solid #0a66c2;
-      text-align: left;
-    }
-
-
-    .official-profile p {
-      margin: 0;
-      line-height: 1.7;
-    }
-
-
-    .official-profile a {
-      color: #0a66c2;
-      font-weight: bold;
-      text-decoration: none;
-      word-break: break-word;
-    }
-
-
-    .official-profile a:hover {
-      text-decoration: underline;
+      color: white;
     }
 
 
     /* =====================================================
-       SERVICES / PRODUCTS
-       ===================================================== */
-
-    #services ul,
-    #products ul {
-      padding-left: 25px;
-    }
-
-
-    /* =====================================================
-       CONTACT
+       CONTACT ICONS
        ===================================================== */
 
     .insta-icon {
       width: 50px;
       height: 50px;
+
       vertical-align: middle;
+
       margin-right: 5px;
     }
 
@@ -475,6 +433,7 @@
       height: 60px;
 
       border: none;
+
       border-radius: 50%;
 
       background: #4f46e5;
@@ -491,7 +450,9 @@
         0 4px 15px rgba(0, 0, 0, 0.3);
 
       display: flex;
+
       align-items: center;
+
       justify-content: center;
     }
 
@@ -502,17 +463,24 @@
 
     footer {
       background: #111;
+
       color: #aaa;
+
       text-align: center;
+
       padding: 20px;
+
       margin-top: 40px;
+
       line-height: 2;
     }
 
 
     footer a {
       color: #0a66c2;
+
       text-decoration: none;
+
       margin: 0 8px;
     }
 
@@ -535,7 +503,9 @@
 
       nav a {
         display: inline-block;
+
         margin: 6px 7px;
+
         font-size: 14px;
       }
 
@@ -552,6 +522,7 @@
 
       section {
         margin: 20px 12px;
+
         padding: 30px 18px;
       }
 
@@ -561,22 +532,17 @@
       }
 
 
-      .staff-card {
-        width: 100%;
-        max-width: 340px;
-      }
-
-
-      .staff-card img {
-        width: 130px;
-        height: 130px;
+      .staff-list {
+        grid-template-columns: 1fr;
       }
 
 
       .chat-btn {
         width: 55px;
         height: 55px;
+
         font-size: 24px;
+
         bottom: 15px;
         right: 15px;
       }
@@ -597,25 +563,15 @@
 
 <nav>
 
-  <a href="#home">
-    Home
-  </a>
+  <a href="#home">Home</a>
 
-  <a href="#services">
-    Services
-  </a>
+  <a href="#services">Services</a>
 
-  <a href="#products">
-    Products
-  </a>
+  <a href="#products">Products</a>
 
-  <a href="team-rules.html">
-    Team Rules
-  </a>
+  <a href="team-rules.html">Team Rules</a>
 
-  <a href="#contact">
-    Contact
-  </a>
+  <a href="#contact">Contact</a>
 
   <a href="privacy-policy.html">
     Privacy Policy
@@ -641,7 +597,6 @@
     Join Application
   </a>
 
-  <!-- STAFF -->
   <a href="staff.html">
     Staff
   </a>
@@ -660,11 +615,9 @@
     MONESHSYS
   </h1>
 
-
   <p>
     Technologies
   </p>
-
 
   <p>
     Smart • Simple • Secure Digital Solutions
@@ -673,7 +626,9 @@
 </header>
 
 
-<!-- SECRET ACCESS SCRIPT -->
+<!-- =====================================================
+     SECRET ACCESS
+     ===================================================== -->
 
 <script>
 
@@ -721,7 +676,6 @@
     About Us
   </h2>
 
-
   <p>
 
     MoneshSys Technologies is a student-driven
@@ -735,8 +689,10 @@
   </p>
 
 
-  <a href="founder.html"
-     class="author">
+  <a
+    href="founder.html"
+    class="author"
+  >
 
     - By Monesh.K.K
 
@@ -778,8 +734,8 @@
       Monesh is the founder of
       MoneshSys Technologies, a student-driven
       technology initiative focused on learning,
-      collaboration, and building useful
-      digital tools.
+      collaboration, and building useful digital
+      tools.
 
     </p>
 
@@ -800,107 +756,80 @@
   </h2>
 
 
-  <p class="staff-intro">
+  <p class="staff-description">
 
-    Meet the people contributing their skills
-    and creativity to MoneshSys Technologies.
+    Meet the staff members of
+    MoneshSys Technologies and explore
+    their respective roles and official profiles.
 
   </p>
 
 
-  <div class="staff-grid">
+  <div class="staff-list">
 
 
     <!-- =================================================
-         BEVAN JUDE
+         STAFF MEMBER 1
          ================================================= -->
 
-    <div class="staff-card">
-
-
-      <!--
-
-        IMPORTANT:
-
-        This image is loaded from the STAFF DOMAIN.
-
-        It does NOT require bevan.jpg to be
-        inside the main GitHub repository.
-
-      -->
-
-      <img
-        src="https://staff.moneshsys.com/bevan.jpg"
-        alt="Bevan Jude – Manager – Logo Design"
-        loading="lazy"
-      >
-
+    <div class="staff-member">
 
       <h3>
         Bevan Jude
       </h3>
 
 
-      <div class="staff-role">
+      <div class="role">
         Manager – Logo Design
       </div>
 
 
       <p>
 
-        Bevan Jude is the Manager – Logo Design
-        at MoneshSys Technologies, contributing
-        to logo design and visual identity work.
+        Responsible for logo design and
+        visual identity work at
+        MoneshSys Technologies.
 
       </p>
 
 
-      <!-- OFFICIAL PROFILE -->
-
       <a
-        class="staff-profile-btn"
         href="https://staff.moneshsys.com/bevan-jude.html"
       >
 
-        View Official Staff Profile →
+        View Profile →
 
       </a>
 
     </div>
 
-  </div>
 
 
+    <!-- =================================================
+         ADD MORE STAFF MEMBERS HERE
+         =================================================
 
-  <!-- =================================================
-       OFFICIAL PROFILE CONNECTION
-       ================================================= -->
+    <div class="staff-member">
 
-  <div class="official-profile">
+      <h3>
+        Member Name
+      </h3>
 
-    <p>
+      <div class="role">
+        Job Title
+      </div>
 
-      <strong>
-        Official Staff Profile
-      </strong>
+      <p>
+        Short description of the member's role.
+      </p>
 
-      <br><br>
-
-      For complete staff information,
-      visit the official MoneshSys Technologies
-      Staff Portal:
-
-      <br><br>
-
-      <a
-        href="https://staff.moneshsys.com/bevan-jude.html"
-      >
-
-        Bevan Jude – Manager – Logo Design
-
+      <a href="STAFF-PROFILE-URL">
+        View Profile →
       </a>
 
-    </p>
+    </div>
+
+    ================================================= -->
 
   </div>
 
@@ -1059,7 +988,7 @@
 <button
   class="chat-btn"
   onclick="openChat()"
-  aria-label="Open MoneshSys Chatbot"
+  aria-label="Open Chatbot"
 >
 
   💬
